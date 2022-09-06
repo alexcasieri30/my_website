@@ -1,0 +1,75 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+
+td {
+    width: 50vw;
+    height: 100px;
+}
+
+.form-container{
+    margin: 0px;
+    padding: 0px;
+    width: 50vw;
+    margin-top: 100px;
+}
+
+#body{
+    height: 100vh;
+}
+
+.sign-up-text{
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.form{
+    background-color: rgba(50,150,50,.6);
+}
+
+.form-main{
+    height: 100vh;
+    margin: 0px;
+    padding-top: 50px;
+}
+
+
+
+#image{
+    height: 100vh;
+    width: 50vw;
+}
+
+#form{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    text-align: right;
+    height: 300px;
+}
+
+#question{
+    padding: 10px;
+    height: 20px;
+    width: 40px;
+}
+.input{
+    margin-top: 10px;
+}
+#questions-table{
+    height: 20vh;
+    width: 40vw;
+}
+#submit{
+    height: 3em;
+    width: 6em;
+    background-color: rgba(0,80,0, 0.7);
+    padding: 5px;
+}

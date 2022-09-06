@@ -1,0 +1,18 @@
+- validating login credentials
+- changing screen mode light/dark with button
+- image carousel with travel images or something
+- dropdown menu for something
+
+
+GAME/FEATURE IDEAS:
+	- etch-a-scketch -- javascript game idea
+	- carousel with featured projects
+	- list of featured projects
+	- random gif generator on website somewhere as interactive feature
+
+
+TO DO TOMORROW:
+	1. Make the to-do list notes look way better
+	2. (Possibly) make the tic-tac-toe game look way better
+	3. Make way through async and await
+	4. Begin Weather app project

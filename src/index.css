@@ -1,0 +1,272 @@
+@font-face{
+    font-family: all_projects;
+    src: url("./fonts/all.ttf");
+
+}
+@font-face{
+    font-family: todo;
+    src: url("./fonts/todo.otf");
+}
+@font-face{
+    font-family: webdev;
+    src: url("./fonts/webdev.ttf");
+}
+@font-face{
+    font-family: code;
+    src: url("./fonts/code.ttf");
+}
+@font-face{
+    font-family: milky_coffee;
+    src: url("./fonts/milky_coffee.otf");
+}
+
+
+#body-homepage{
+    margin: 0px;
+    padding: 0px;
+    margin-right: 5px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,59,221,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.grid-container{
+    display:grid;
+    grid-template-rows: repeat(10, minmax(1fr, 10vh));
+    grid-template-columns: repeat(10, minmax(100px, 1fr))
+}
+
+.overall-website-sections{
+    padding: 10px;
+}
+
+#dashboard{
+    background-color: rgba(250,250,250,0.2);
+    grid-area: 1/1/11/3;
+    border: solid 1px black;
+}
+#header{
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    grid-area: 1/3/3/11;
+    border: solid 1px black;
+}
+#content{
+    grid-area: 3/3/11/11;
+    border: solid 1px black;
+}
+
+/* DASHBOARD CONTENT */ 
+.dashboard-header{
+    margin-bottom: 10px;
+    text-align: center;
+    height: 10vh;
+}
+.dashboard-pages{
+    cursor: pointer;
+    position:relative;
+    height: 50vh;
+    border: solid 1px black;
+}
+.dashboard-options{
+    position: relative;
+    height: 100vh;
+}
+
+/* FLEXBOX CONTENT */
+.dashboard-option-flex{
+    display: flex;
+    flex-direction:column;
+    height: 18em;
+    text-align: center;
+}
+.dashboard-child-flex{
+    flex: 1 1 auto;
+    background-color: rgba(250,0,250,0.3);
+}
+.dashboard-child-flex:hover{
+    background-color: rgba(250,0,250,0.6);
+}
+
+
+.other-options-flexbox{
+    display: flex;
+    flex-direction: column;
+    height: 18em;
+    text-align: center;
+}
+.dashboard-lower{
+    margin-top: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    flex: 1 1 auto;
+    background-color: rgba(100,250,100,0.3);
+}
+.dashboard-lower:hover{
+    background-color: rgba(0,200,200,1);
+}
+#project_button{
+    font-size: 20pt;
+    font-family: all_projects;
+}
+#todo_button{
+    font-size: 20pt;
+    font-family: todo;
+}
+#web_dev{
+    font-size: 20pt;
+    font-family: webdev;
+}
+#machine_learning{
+    font-size: 10pt;
+    font-family: code;
+}
+
+.selected{
+    box-sizing: border-box;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(60,150,60,0.8);
+    background-color: rgba(0,250,180,0.7);
+}
+.hidden{
+    display:none;
+}
+#dashboard-other-options{
+    font-size: 20pt;
+    color: white;
+    font-family: milky_coffee;
+    text-align: center;
+}
+#dashboard-text{
+    font-family: milky_coffee;
+    color: white;
+    font-size: 25pt;
+}
+
+/* UPPER HEADER */
+.upper-header{
+    flex: 0.25;
+    display:flex;
+    flex-direction:row;
+    border: solid 1px black;
+    height: 20%;
+}
+.search-bar{
+    flex: 0.7;
+    border: solid 1px black;
+}
+.your-information{
+    flex: 0.3;
+    border: solid 1px black;
+}
+#search-bar-text{
+    margin-left: 50px;
+    position:relative;
+
+    border: solid 1px black;
+    border-radius: 25px;
+    height: 15px;
+    width: 70%;
+    padding: 10px;
+    text-align: left;
+}
+#submit-search{
+    border-radius: 100px;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* login and signup */
+.your-information{
+    display:flex;
+}
+.your-information-button{
+    margin:auto;
+    flex: 1;
+}
+#login{
+    margin-left: 50%;
+    width: 5em;
+    height: 2em;
+    text-align: center;
+}
+#signup{
+    margin-left: 0px;
+    width: 5em;
+    height: 2em;
+    align-items: flex-end;
+}
+
+
+/* LOWER HEADER */
+.lower-header{
+    flex: 0.75;
+    height: 80%;
+    display:flex;
+    flex-direction: row;
+    border: solid 1px black;
+}
+.titles{
+    flex: 0.6;
+    border: solid 1px black;
+}
+.other-actions{
+    flex: 0.4;
+    border: solid 1px black;
+}
+
+#title-content{
+    color: white;
+    height: 20%;
+    padding: 20px;
+    border: solid 1px black;
+}
+#projects{
+    padding: 5px;
+    border: solid 1px black;
+    height: 45%;
+}
+
+/* PROJECT CONTAINER */
+.projects{
+    width: 80%;
+    border: solid 1px black;
+}
+.project-container{
+    overflow: auto;
+    height: 90vh;
+    padding: 10px;
+    display:flex;
+    flex-direction:column;
+    border: solid 1px black;
+}
+.project-example{
+    flex: 1;
+    border: solid 1px black;
+}
+#project1{
+    color: white;
+}
+
+.todo{
+    width: 80%;
+    border: solid 1px black;
+}
+.todo-container{
+    overflow: auto;
+    height: 90vh;
+    padding: 10px;
+    display:flex;
+    flex-direction:column;
+    border: solid 1px black;
+}
+.todo-example{
+    flex: 1;
+    border: solid 1px black;
+}

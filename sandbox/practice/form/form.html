@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="form.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <table class="main">
+        <tr id="body">
+            <td class="container">
+                <img src="image.png" id="image">
+            </td>
+            <td class="form-container">
+                <div class="form-main">
+                    <div class="sign-up-text">
+                        <h2>Sign Up Form</h2>
+                    </div>
+                   
+                    <div class="form">
+                        <form method="get" id="form" action="./form.html">
+                            <table id="questions-table">
+                                <tr>
+                                    <td id="question">
+                                        <label for="name">What is your name?</label>
+                                        <input type="text" class="input" name="name">
+                                    </td>
+                                    <td id="question">
+                                        <label for="occupation">What is your occupation?</label>
+                                        <input type="text" class="input" name="occupation">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="question">
+                                        <label for="live">Where do you live? </label>
+                                        <input type="text" class="input" name="live">
+                                    </td>
+                                    <td id="question">
+                                        <label for="username">Username: <br></label>
+                                        <input type="text" class="input" name="username" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="question">
+                                        <label for="password">Password: <br></label>
+                                        <input type="password" minlength="5" class="input" name="password" required>
+                                    </td>
+                                    <td id="question">
+                                        <label for="confirm_pass">Confirm Password: <br></label>
+                                        <input type="password" class="input" name="confirm_pass" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" id="question"><button type="submit" id="submit">Create Account</button></td>
+                                </tr>
+                            </table>
+                            <br>
+                            <br>
+                            <br>
+                        </form>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+    
+</body>
+</html>

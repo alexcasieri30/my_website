@@ -1,0 +1,15 @@
+{
+    "name": "alex",
+    "age": "22",
+    "friends":[
+        {
+            "name": "cory",
+            "age": "22"
+        },
+        {
+            "name": "James",
+            "age": "22"
+        }
+    ],
+    "dob" : "10191999"
+}

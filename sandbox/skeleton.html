@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="skeleton.css">
+    <title>Document</title>
+</head>
+<body>
+    <div><h1>hello world</h1></div>
+    <div><h2>another field</h2></div>
+    <div><button class="clickme">Button</button></div>
+    <div class="center-justify">
+
+
+    <div class="form">
+
+        <div class="note">
+                        <div class="textbox">
+                            <div class="textarea-section1">
+                                Title: 
+                                <br>
+                                <div class="title-textarea">
+                                    <label for="note-title"></label>
+                                    <input id="temp-note-title" type="textarea" name="note-title" placeholder="Enter title">
+                                </div>
+                            </div>
+                            <div class="textarea-section2">
+                                Text: 
+                                <br>
+                                <div class="notetext">
+                                    <textarea id="temp-note-text" placeholder="Enter note text"></textarea>
+                                </div>
+                            </div>
+                            <div class="textarea-section3" id="temp-note-author">
+                                Author: 
+                                <div class="author-text">
+                                    <label for="author-input"></label>
+                                    <input type="textarea" id="author" name="author-input" placeholder="Enter author">
+                                </div>
+                            </div>
+                            <div class="textarea-section4">
+                                <div class="textarea-section-child">
+                                    <button class="note-button" id="clear">
+                                        Clear
+                                    </button>
+                                </div>
+                                <div class="textarea-section-child">
+                                    <button  class="note-button" id="submit-button">
+                                        Save
+                                    </button>
+                                </div>
+                                <div class="textarea-section-child">
+                                    <button  class="note-button" id="edit">
+                                        Edit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+</div>
+    <script>
+        let button = document.querySelector("button");
+        let form = document.querySelector(".form");
+        button.onclick = function(){
+            if (form.classList.contains("hidden")){
+                form.classList.remove("hidden")
+            }else{
+                form.classList.add("hidden")
+            }
+            
+        }
+    </script>
+</body>
+</html>

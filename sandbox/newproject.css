@@ -1,0 +1,77 @@
+.new-project-information{
+    top: 100px;
+    border-radius: 20px;
+    background-color: blue;
+    position:absolute;
+    margin: auto;
+    height: 400px;
+    width: 500px;
+    display:flex;
+    flex-direction:column;
+    .new-project-header{
+        text-align: center;
+        flex: 0.1;
+    }
+    .new-project-body{
+        flex: 0.8;
+        margin-top: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        .new-project-title{
+            display:flex;
+            justify-content:center;
+            #project-title{
+                border-radius: 10px;
+                border: solid 1px black;
+                width: 80%;
+                height: 30px;
+            }
+        }
+        .new-project-text{
+            display:flex;
+            justify-content:center;
+            height: 70%;
+            #project-text{
+                width: 80%;
+                height: 120px;
+            }
+        }
+    }
+    .new-project-footer{
+        flex: 0.1;
+        #submit-project{
+            cursor:pointer;
+            background-color: rgba(0,0,150,0.9);
+            color: white;
+            width: 100px;
+            height: 40px;
+            border-radius: 10px;
+        }
+        .submit-project-div{
+            display:flex;
+            justify-content:center;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.submit-note-div{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    margin-top: 20px;
+}
+
+#submit-project{
+    cursor:pointer;
+    background-color: rgba(0,0,150,0.9);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+.submit-project-div{
+    display:flex;
+    justify-content:center;
+    margin-bottom: 10px;
+}

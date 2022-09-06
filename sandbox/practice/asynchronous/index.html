@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <img src="#">
+  <br>
+  <input type="text" class="search">
+  <button id="button">Click Me</button>
+  <div class="space">
+
+  </div>
+  <script>
+        const img = document.querySelector('img');
+
+        const api_key = "0Q4FmHumIiWSfHrwHGbmBSh5T4tCWf1Z";
+        let space = document.querySelector(".space");
+        let button = document.getElementById("button");
+        let input = document.querySelector(".search");
+        button.onclick = function(){
+            let val = input.value || "cats";
+            let url = `https://api.giphy.com/v1/gifs/translate?api_key=${api_key}&s=${val}`;
+            fetch(url, {mode: 'cors'})
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(response) {
+                img.classList.add("class");
+                img.src = response.data.images.original.url;
+            })
+            .then(function(){
+                space.innerHTML = "Complete!"
+            })
+            .catch(function(error){
+                space.innerHTML = "No gifs with this keyword found!";
+            });
+            space.innerHTML = "Loading...";
+
+        }
+        
+  </script>
+</body>
+</html>
