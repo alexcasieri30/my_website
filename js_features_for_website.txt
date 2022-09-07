@@ -1,18 +1,14 @@
-- validating login credentials
-- changing screen mode light/dark with button
-- image carousel with travel images or something
-- dropdown menu for something
-
 
 GAME/FEATURE IDEAS:
 	- etch-a-scketch -- javascript game idea
-	- carousel with featured projects
-	- list of featured projects
 	- random gif generator on website somewhere as interactive feature
+	- ODIN Projects page 2 --> carousel with all projects
+	- changing screen mode light/dark with button
 
 
 TO DO TOMORROW:
-	1. Make the to-do list notes look way better
-	2. (Possibly) make the tic-tac-toe game look way better
-	3. Make way through async and await
-	4. Begin Weather app project
+	1. begin battleship outline for game
+	2. work with react app, try doing one of the assignments
+	3. fix the white background of x-images in tictactoe
+	4. fix styling for dashboard, other options
+		- add display pages for all "other options"
