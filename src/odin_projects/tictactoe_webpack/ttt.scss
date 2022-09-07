@@ -1,3 +1,6 @@
+#ttt-body{
+    background-color: rgba(180,240,180,1);
+}
 .header{
     margin:0px;
     flex: 0.05;
@@ -17,39 +20,47 @@
 }
 
 .game-play{
-    height: 100vh;
+    height: 80vh;
     display:flex;
     flex-direction: column;
 }
-.header-text{
-    flex: 0.3;
+.header-text-tictactoe{
+    text-align:center;
+    flex: 0.1;
 }
 .gameboard{
-    flex: 0.55;
+    flex: 0.7;
+    display:flex;
+    justify-content:center;
 }
 .bottom{
-    flex: 0.15;
+    height: 100px;
+    flex: 0.2;
+    display:flex;
+    justify-content:center;
 }
 
 .grid-container-tictactoe{
     display:grid;
     overflow: scroll;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 140px);
+    grid-template-rows: repeat(3, 140px);
     border: solid 1px black;
-    height: 300px;
-    width: 300px;
+    border-radius: 10px;
+    height: 420px;
+    width: 420px;
     position:relative;
     top: 10vh;
-    left: 37vw;
     cursor: pointer;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 0.4);
+
 }
-.header-text{
-    text-align: center;
-    margin-top: 50px;
-}
+
 .game-box{
-    border: solid 1px black;
+    border: dashed 1px black;
+}
+.game-box:hover{
+    border: solid 3px darkblue;
 }
 .active{
     height: 98px;
@@ -58,9 +69,6 @@
 }
 .hidden{
     display: none;
-}
-.gameboard{
-    background-color: transparent;
 }
 
 .p1{
@@ -103,12 +111,6 @@
     align-content: center;
 }
 
-.bottom{
-    margin-left: 140px;
-    margin-right: 100px;
-    position:relative;
-    top: 150px;
-}
 .choose-img-container{
     align-content: center;
     margin:auto;
@@ -132,7 +134,7 @@
     border: solid 3px yellow;
 }
 .selected{
-    border: solid 3px green;
+    border: dotted 3px rgb(57, 128, 57);
 }
 
 

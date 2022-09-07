@@ -1,4 +1,4 @@
-import './ttt.css';
+import './ttt.scss';
 import x from './images/x.jpg';
 import x1 from './images/x1.png';
 import x2 from './images/x2.png';
