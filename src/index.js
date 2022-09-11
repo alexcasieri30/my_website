@@ -10,7 +10,8 @@ for (let i = 0; i < params.length; i++){
         person[key.toString()] = val;
     }
 }
-if (window.localStorage.getItem('user')=="{}"){
+let prevuser = window.localStorage.getItem('user');
+if (prevuser=="{}"||prevuser==null){
     window.localStorage.setItem('user', JSON.stringify(person));
 }
 

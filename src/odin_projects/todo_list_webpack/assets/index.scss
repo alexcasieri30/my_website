@@ -132,6 +132,7 @@ body{
         .noteboard{
             flex: 0.85;
             border: solid 1px black;
+            overflow: scroll;
             .grid{
                 z-index:0;
                 width: 90%;
@@ -139,14 +140,15 @@ body{
                 margin: 15px;
                 display:grid;
                 grid-template-columns: repeat(5, 150px);
-                grid-template-rows: repeat(2, 150px);
+                grid-template-rows: repeat(8, 150px);
                 grid-gap: 20px;
-                overflow: auto;
+                
             }
         }
     }
 }
 .active-note{
+    overflow: scroll;
     border: solid 1px black;
     border-radius: 10px;
     display:flex;
