@@ -1,5 +1,5 @@
 #ttt-body{
-    background-color: rgba(180,240,180,1);
+    background: linear-gradient(to left,#8A2387,#E94057,#F27121);
 }
 .header{
     margin:0px;
@@ -16,7 +16,7 @@
     text-align:center;
 }
 .header-elements:hover{
-    background-color: gray;
+    background-color: rgba(0,0,0,0.3);
 }
 
 .game-play{

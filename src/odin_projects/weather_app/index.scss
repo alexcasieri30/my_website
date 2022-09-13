@@ -113,14 +113,71 @@
                     border: solid 4px rgb(136, 136, 255);
                 }
                 .title{
+                    margin-top: 10px;
                     font-size: 15pt;
+                    display:flex;
+                    flex-direction:row;
+                    .temperature-title{
+                        flex: 0.5;
+                    }
+                    .temperature-title-main-weather{
+                        flex: 0.5;
+                    }
+                    .temperature-wind-speed{
+                        flex: 0.5;
+                    }
+                    .temperature-other{
+                        flex: 0.5;
+                    }
                 }
                 .temp-info{
-                    margin-top: 10px;
-                    height: 70px;
+                    display:flex;
+                    flex-direction: row;
+                    .temp-info-temp{
+                        margin-top: 10px;
+                        height: 70px;
+                    }
+                    .temp-info-main{
+                        margin-top: 10px;
+                        margin-left: 50px;
+                        height: 70px;
+                    }
                 }
-                .wind-info{
-                    height: 70px;
+                .other-info{
+                    display:flex;
+                    flex-direction:row;
+                    .wind-info{
+                        height: 70px;
+                        flex: 0.5;
+                    }
+                    .extra-info{
+                        height: 70px;
+                        flex: 0.5;
+                    }
+                }
+                .sun{
+                    margin-top: 20px;
+                    .sun-title{
+                        font-size: 15pt;
+                        display:flex;
+                        flex-direction:row;
+                        .sunrise-title{
+                            flex: 0.5;
+                        }
+                        .sunset-title{
+                            flex: 0.5;
+                        }
+                    }
+                    .sun-info{
+                        display:flex;
+                        flex-direction:row;
+                        .sunrise-info{
+                            flex: 0.5;
+                        }
+                        .sunset-info{
+                            flex: 0.5;
+                        }
+                    }
                 }
             }
             .input-footer{

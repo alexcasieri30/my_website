@@ -32,6 +32,7 @@ let submit_note = document.querySelector('#submit-note');
 let edit = document.getElementById('edit');
 
 let authorfilter = document.querySelectorAll('.author-filter-text');
+
 add_note.onclick = function(){
     displayFunctions().add_note_button();
     let newnote = new note();
@@ -47,6 +48,7 @@ add_note.onclick = function(){
         store_current_data(newnote);
     }
 }
+
 
 let newproject = document.getElementById('new-project')
 newproject.onclick = function(){

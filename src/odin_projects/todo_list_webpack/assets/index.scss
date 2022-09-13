@@ -35,7 +35,7 @@ body{
         text-align:center;
     }
     .header-elements:hover{
-        background-color: gray;
+        background-color: rgba(0,0,0,0.3);
     }
 }
 
@@ -78,7 +78,6 @@ body{
                 }
                 .project-title:hover{
                     cursor:pointer;
-                    background-color: gray;
                 }
             }
             .section3{
@@ -174,6 +173,17 @@ body{
         flex: 0.8;
         overflow-y: scroll;
         overflow-wrap: break-word;
+    }
+    .active-note-details{
+        z-index: 0;
+        text-align:center;
+        position:relative;
+        top: 20px;
+        background-color: rgba(100,200,200,0.3);
+    }
+    .active-note-details:hover{
+        text-decoration:underline;
+        cursor: pointer;
     }
 }
 .center-content{

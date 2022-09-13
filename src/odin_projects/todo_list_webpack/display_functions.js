@@ -1,5 +1,6 @@
 import note from './objects.js';
 import x_out from './assets/x_out.jpg';
+import uniqid from 'uniqid';
 
 export const displayFunctions = function(){
     const xout_image = function(){
@@ -148,7 +149,15 @@ export const displayFunctions = function(){
         
         newnote.appendChild(note_title);
         newnote.appendChild(note_text);
-        
+        let details_div = document.createElement("div");
+        details_div.classList.add("active-note-details");
+        details_div.innerHTML = "details";
+        details_div.onclick = function(event){
+            console.log("details clicked");
+            console.log(event);
+        }
+        newnote.appendChild(details_div);
+        console.log(newnote);
         notes_area.appendChild(newnote);
     }
 
@@ -176,6 +185,7 @@ export const displayFunctions = function(){
         note.setAuthor(note_author_value);
         note.setText(note_text_value);
         note.setProject(note_project_value);
+        note.setNoteId(uniqid());
         
         let popup = document.querySelector(".new-note-information");
         let body = document.querySelector("body");

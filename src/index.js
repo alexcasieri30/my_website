@@ -1,4 +1,4 @@
-import './index.css';
+import './index.scss';
 
 const queryString = window.location.search;
 let params = queryString.substr(1).split("&");

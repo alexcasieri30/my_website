@@ -9,7 +9,8 @@ module.exports = {
         'odin_projects/weather_app/output/main': './src/odin_projects/weather_app/index.js',
         'odin_projects/todo_list_app/output/main': './src/odin_projects/todo_list_webpack/index.js',
         'odin_projects/tictactoe_app/output/main': './src/odin_projects/tictactoe_webpack/ttt.js',
-        'sign_in_files/sign_up_validation': './src/sign_in_files/validate.js'
+        'sign_in_files/sign_up_validation': './src/sign_in_files/validate.js',
+        'odin_projects/main': './src/odin_projects/index.js',
     },
   output: {
     path: path.resolve(__dirname, 'output'),

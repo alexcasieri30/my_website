@@ -2,13 +2,52 @@
 GAME/FEATURE IDEAS:
 	- etch-a-scketch -- javascript game idea
 	- random gif generator on website somewhere as interactive feature
-	- ODIN Projects page 2 --> carousel with all projects
+	- ODIN Projects page -->
+		- title at top "All Projects"
+		- below the title: div in middle of page with rounded edges
+		containing all projects with scroll 
+		- for each project: 
+			- project link on the left
+			- button with link to project personal (to-do list) style notes page on right
 	- changing screen mode light/dark with button
+	- in each project container on main page:
+		- on right side of the div:
+			- carousel with all projects/games 
+
+TO DO FOR EACH PROJECT:
+	BATTLESHIP:
+		- begin battleship outline for game
+		- start coding battleship
+	TICTACTOE:
+		- fix the white background of x-images in tictactoe
+	MAIN:
+		- fix styling for dashboard, other options
+	WEATHER APP: 
+		- can make it look better
+	TODO LIST:
+		- add filtering by title
+		- add details flip icon under note content
+		- add delete button for individual notes
+		- fix details z index issue
+	MEMORY: 
+		- done
 
 
-TO DO TOMORROW:
-	1. begin battleship outline for game
-	2. work with react app, try doing one of the assignments
-	3. fix the white background of x-images in tictactoe
-	4. fix styling for dashboard, other options
-		- add display pages for all "other options"
+refactor features
+
+	- 1 webpack config page in root directory
+	- folders: 
+		- odin_projects folder with each project
+			- include todo-list (project-notes-list) in the navbar or top of page somewhere
+			- apps: 
+				- weather app
+				- tictactoe
+				- memory1
+				- memory2 -- include react project in this index page
+		- sign_in_files
+
+	- clean up garbage files, file names, folder asset structure, css -> scss
+	- eventual major refactor with all react:
+		- routing
+			- use routing with the navbar 
+			- have all odin projects in a folder that router can handle
